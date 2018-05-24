@@ -1,1 +1,35 @@
+- [ ] 2.1.5 Section Review, Questions 1,2,3,4 and 5
+- [ ] 2.4.3 Section Review, Question 5
+- [ ] 2.5.2 Section Review, Questions 1, 3, 4, and 5
+- [ ] 2.8 Review Question 7, 8, 9, 10, 12, 19, 20, 25, and 26
 
+
+- [ ] Upload your assignment to GitHub
+- [ ] Email james.wilson@rccd.edu with the url to the source code on GitHub	
+
+** 19 Possible Points (1 for each question) ***
+
+  - [ ] 2.1.5 Section Review, Questions 1,2,3,4 and 5
+  1. The control unit, Arithmatic Logic Unit, and the system clock.
+  2. Data, Adress, and Control buses.
+  3. Conventional memory is outside the CPU and it responds more slowly to access requests.
+	 Registers are hard-wired inside the CPU.
+  4. Fetch, decode,and execute.
+  5. Fetch and store.
+	- [ ] 2.4.3 Section Review, Question 5
+  5. The 8259 is the interrupt controller chip, sometimes called PIC, that schedules hardware interrupts and interrupts the CPU.
+	- [ ] 2.5.2 Section Review, Questions 1, 3, 4, and 5
+  1. The application program level.
+  3. New devices are invented all the time with capabilities that were often not anticipated when the BIOS was written.
+  4. The BIOS level.
+  5. No. The same BIOS would work for both operating systems. Many computer owners install two or three operating systems on 
+	- [ ] 2.8 Review Question 7, 8, 9, 10, 12, 19, 20, 25, and 26
+  7. The Floating Point Unit.
+  8. 80
+  9. T
+  10. F
+  12. F
+  19. F
+  20. F
+  25. All.
+  26. Game programs try to take advantage of the latest tech and features in the specialized soundcards. 
