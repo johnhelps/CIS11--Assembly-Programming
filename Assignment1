@@ -1,1 +1,126 @@
+Assignment 1
 
+- [ ] 1.1.3 Section Review, Questions 1,3, 8, 12
+- [ ] 1.2.1 Section Review, Questions 2, 3, 10
+- [ ] 1.3.9 Section Review, Questions 2, 3, 5, 6, 7 
+- [ ] 1.7.1 Short Answer, Questions 1-22 and 25
+- [ ] 1.7.2 Algorithm Workbench, Choose any 1 question 
+- [ ] EXTRA CREDIT: 1.4.2 Section Review, Questions 1-5 (1 point extra credit per question)
+- [ ] Upload your assignment to GitHub
+- [ ] Email james.wilson@rccd.edu with the url to the source code on GitHub	
+
+** 36 Possible Points (1 for each question) ***
+
+1.1.3 Questions
+  1. An assembler is a type of utility program that converts code written in assembly language and converts it into machine language. 
+	 A linker is a ultility program that links the individual files that are created by the assembler.
+  3. In a one-to-many relationship, high-level languages uses an individual statement transforms to multiple machine instructions.
+  8. C++ isn't allowed a pointer of an individual type to be assigned to a pointer of another variable. Assembly has no restrictions.
+  12. X = (Y * 4) + 3
+	  mov eax,Y;
+	  add eax,4;
+	  mov ebx,3;
+	  imul ebx;
+	  mov X,eax;
+  
+1.2.1 Questions
+  2. Programs that are translated programs are set. While interpreted programs can allow for real time input.
+  3. T
+  10. Level 2.
+  
+1.3.9 Questions
+  2. a. 11111000 = 8 + 16 + 32 + 64 + 128 = 248
+	 b. 11001010 = 2 + 8 + 64 + 128 = 202
+	 c. 11110000 = 16  + 32 + 64 + 128 = 240
+  3. a. 00001111 + 00000010 = 00010001 = 17
+	 b. 11010101 + 01101011 = 101000000 = 320
+	 c. 00001111 + 00001111 = 00011110 = 30
+  5. a.7 bits
+	 b. 9 bits
+	 c. 15 bits
+  6. a. 0011 0101 1101 1010 = 3 5 d a
+	 b. 1100 1110 1010 0011 = c e d 3
+	 c. 1111 1110 1101 1011 = f e d b
+  7. a. A4693FBC = 1010 0100 0110 1001 0011 1111 1011 1101
+	 b. B697C7A1 = 1011 0110 1001 0111 1101 0111 1010 0001
+	 c. 2B3D9461 = 0010 1011 0011 1100 1001 0100 0110 0001
+  
+1.7.1 Questions
+  1. The MSB is the left most bit due to the convention in positional notation of writing more siginificant digits further to the left.
+  2. a. 00110101 = 53
+	 b. 10010110 = 150
+	 c. 11001100 = 204 
+  3. a. 10101111 + 11011011 = 110001010 = 394
+	 b. 10010111 + 11111111 = 110010110 = 406
+	 c. 01110101 + 10101100 = 100100001 = 289
+  4. 00001101 - 00000111 = 00001101 + 11111000 = 00000101
+  5. a. 16 bits
+	 b. 32 bits
+	 c. 64 bits
+	 d. 128 bits
+  6.a. 12 bits
+	 b. 16 bits
+	 c. 16 bits
+  7. a. 0011 0101 1101 1010 = 3 5 d a
+	 b. 1100 1110 1010 0011 = c e a 3
+	 c. 1111 1110 1101 1011 = f e d b
+  8. a. 0126F9D4 = 0000 0001 0010 0110 1111 1001 1101 0100
+	 b. 6ACDFA95 = 0110 1010 1100 1101 1111 1010 1001 0101
+	 c. F69BDC2A = 1111 0110 1001 1011 1101 1100 0010 1010
+  9. a. 3A = 310
+	 b. 1bf = 11115
+     c. 1001 = 1001
+  10. a. 98
+	  b. 1203
+	  c. 671
+  11. a. FFE8
+	  b. FEB5
+  12. a. FEBF
+	  b. FFD3
+  13. a. 27641
+	  b. -16093
+  14. a. 19666
+	  b. -32208
+  15. a. 181
+	  b. 42
+	  c. 240
+  16. a. 128
+	  b. 204
+   	  c. 183
+  17. a. 11111011
+	  b. 11010110
+	  c. 11110000
+  18. a. 10111000
+	  b. 10011110
+	  c. 11100110
+  19. a. 0AB2
+	  b. 1106 
+  20. a. 0B82
+	  b. 1316
+  21. B hex: 66 dec: 42
+  22. G hex: 71 dec: 47
+  25. 
+		A B -(A v B)
+		T T F
+		T F T
+		F T T
+		F F T
+  
+  1.7.2
+Question 1.
+int toInt32(string s) 
+{
+int num = 0;
+for(int i = 0; s[i] >= '0' && s[i] <= '1'; i++) 
+{
+ num = num * 2 + s[i]-'0';
+}
+return num;
+}
+
+EXTRA CREDIT: 1.4.2 Questions
+1.¬X ∨ Y = neither
+2.(X ∧ Y) = X and Y
+3.(T ∧ F) ∨ T = True
+4.¬(F ∨ T) = False
+5.¬F ∨ ¬T = True
