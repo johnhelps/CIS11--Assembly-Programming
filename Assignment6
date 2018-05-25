@@ -1,1 +1,68 @@
+- [ ] 5.9 Programming Exercises, Questions 10   
+- [ ] 5.9 Programming Exercises, Question 7 (You will need to do this in 32 bit) OR Write a program that uses the Random64 function from the Irvine64 library
 
+
+
+
+- [ ] Upload your assignment to GitHub
+- [ ] Email james.wilson@rccd.edu with the url to the source code on GitHub	
+
+***  20 points (10 points for each question) ***
+
+;Question 10: Random Screen Locations
+
+ExitProcess proto
+WriteString proto
+ReadInt64 proto
+WriteInt64 proto
+Random64 proto
+
+.data
+disp BYTE "Try to guess a number between 1 - 1000: ",0
+inputInt QWORD 0
+randoInt QWORD 0
+.code
+main proc
+xor rdx,rdx; rdx now has mod
+
+call Random64
+mov rcx, 100000
+div rcx
+mov rcx, rdx
+
+LP1:
+
+mov rax,rcx
+call WriteInt64
+
+loop LP1
+
+mov rax,0
+call ExitProcess
+main endp
+end
+
+;Question 7: Fibonachi Sequence
+
+ExitProcess proto
+.code
+main proc
+
+MOV rcx,47
+MOV rax,1
+MOV rbx,0
+MOV rdx,0
+
+LP1:
+
+ADD rax,rbx					
+ADD rax,rdx					
+MOV rdx,rbx					
+MOV rbx,rax
+MOV rax,0
+
+loop LP1
+
+call ExitProcess
+main endp
+end
