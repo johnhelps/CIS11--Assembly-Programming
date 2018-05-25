@@ -1,1 +1,87 @@
+Due 2 Weeks before the final day of classes
 
+ Chapter 4, Section 4.10 Programming Exercises: Question 8.
+Using a loop and indexed addressing, write code that rotates the members of a 32-bit integer array 
+forward one position.  The value at the end of the array must wrap around to the first position.  
+For example, the array [10,20,30,40] would be transformed into [40,10,20,30]
+ Upload your assignment to GitHub
+
+ Email james.wilson@rccd.edu with the url to the source code on GitHub
+
+*** 25 points ***
+
+ExitProcess proto
+WriteInt64 proto
+ReadInt64 proto
+.data
+
+array QWORd 1d,2d,3d,4d,5d,6d,7d,8d,9d,10d
+target QWORD 10 DUP(0)
+
+.code
+main proc
+
+mov rcx, 10
+mov rbx, 0
+mov r12 ,8
+
+LP1:
+
+mov rax,rbx
+mul r12
+mov r11,rax
+mov rax, array[r11]
+call WriteInt64
+inc rbx
+loop LP1
+
+mov rcx, 10
+mov rbx, 0
+mov r12 ,8
+
+SLP:
+
+mov rax,rbx
+mul r12
+mov r11,rax
+mov rbp,r11;
+add rbp,8
+		
+mov r14, array[r11]
+mov target[rbp],r14
+		
+
+;mov r15,array[rbp]
+;add r11,24
+;mov array[r11],r15
+;mov array[rbp],r14
+cmp rbx, 10
+je ifTen
+ifTen:
+mov r14, array[r11]
+mov target[0],r14
+
+add rbx, 1
+loop SLP
+
+call ReadInt64
+
+
+mov rcx, 10
+mov rbx, 0
+mov r12 ,8
+
+LP2:
+
+mov rax,rbx
+mul r12
+mov r11,rax
+mov rax, array[r11]
+call WriteInt64
+inc rbx
+loop LP2
+
+call ReadInt64
+call ExitProcess
+main endp
+end
