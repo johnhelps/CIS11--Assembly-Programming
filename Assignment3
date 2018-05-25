@@ -1,1 +1,69 @@
+- [ ] 3.1.11 Section Review, Questions 1, 2, 3, 4
+- [ ] 3.2.4 Section Review, Questions 4, 5
+- [ ] 3.3.3 Section Review, Questions 1, 2, 3, 4
+- [ ] 3.4.13 Section Review, Questions 1, 2, 3, 4, 5
+- [ ] 3.5.5 Section Review Question 3
+- [ ] 3.9.1 Short Answer, Questions 4, 5, 6, 25
+- [ ] 3.9.2 Algorithm Workbench, Questions 4, 7, 13
+- [ ] 3.10 Programming Exercises, Pick any 1 exercise
 
+
+- [ ] Upload your assignment to GitHub
+- [ ] Email james.wilson@rccd.edu with the url to the source code on GitHub	
+
+** 24 Possible Points (1 for each question) ***
+
+3.1.11 Questions
+1. -35d
+   -23h
+   -43o
+   -00100011b
+2. Y
+3. N
+4. (((-2+2)*(10000/5))-(2+1)) mod = 1
+
+3.2.4
+4. rax holds the sum
+5. ExitProcess stops the program
+
+3.3.3
+1. Object and Listing files.
+2. T
+3. T
+4. The executable file.
+
+3.4.13 Questions
+1. var1 SWORD ?
+2. var2 BYTE ?
+3. var3 SBYTE ?
+4. var4 QWORD ?
+5. SDWORD
+
+3.5.5 Questions
+3. ArraySize = ($ - myArray)
+   
+3.9.1 Questions
+4. Assembler means the program that translates your source code.
+5. Big endian stores big end first while little endian stores little end first. 
+6. When the constant may be changing a lot throughout the code, it is easy to change it in one place rather than searching the code for all of the instances of that constant. 
+25. SDWORD
+
+3.9.2 Questions 
+4. Overflows to a larger number.
+7. anArray DWORD 120 DUP('?')
+13. String BYTE 500 DUP("TEST")
+
+3.10 Question 1
+.code
+main PROC
+ mov eax,5
+ mov ebx,10
+ mov ecx,4
+ mov edx,6
+ add ebx,eax
+ add edx,ecx
+ neg edx
+ add ebx,edx
+ INVOKE ExitProcess,0
+main ENDP
+END main
